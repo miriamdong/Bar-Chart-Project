@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <title>Bar Chart</title>
+    <link rel="stylesheet" href="bar.css">
+
+  </head>
+
+  <body>
+
+
+    <div id="wrapper">
+      <div class="chart">
+
+        <h2>The most beautiful cat breeds on Earth</h2>
+        <table id="data-table" border="1" cellpadding="10" cellspacing="0" summary="How many cats in your country">
+          <caption>Mouse over the bars to display information.</caption>
+          <thead>
+            <tr>
+              <td>&nbsp;</td>
+              <th scope="col">Siamese</th>
+              <th scope="col">Bengal</th>
+              <th scope="col">Abyssinian</th>
+              <th scope="col">Birman</th>
+              <th scope="col">Domestic short-haired</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">North America</th>
+              <td>4080</td>
+              <td>6080</td>
+              <td>6240</td>
+              <td>3520</td>
+              <td>2240</td>
+            </tr>
+            <tr>
+              <th scope="row">Europe</th>
+              <td>5680</td>
+              <td>6880</td>
+              <td>6240</td>
+              <td>5120</td>
+              <td>2640</td>
+            </tr>
+            <tr>
+              <th scope="row">Asia</th>
+              <td>1040</td>
+              <td>1760</td>
+              <td>2880</td>
+              <td>4720</td>
+              <td>7520</td>
+            </tr>
+            <div id="figure">
+              <h4>In Thousands</h4>
+              <ul class="legend">
+                <li><span class="icon fig0"></span>North America</li>
+                <li><span class="icon fig1"></span>Europe</li>
+                <li><span class="icon fig2"></span>Asia</li>
+              </ul>
+              <div class="graph">
+                <ul class="x-axis">
+                  <li><span>Siamese</span></li>
+                  <li><span>Bengal</span></li>
+                  <li><span>Abyssinian</span></li>
+                  <li><span>Birman</span></li>
+                  <li><span>Domestic</span></li>
+                </ul>
+                <ul class="y-axis">
+                  <li><span>8</span></li>
+                  <li><span>6</span></li>
+                  <li><span>4</span></li>
+                  <li><span>2</span></li>
+                  <li><span>0</span></li>
+                </ul>
+                <div class="bars">
+                  <div class="bar-group">
+                    <div class="bar fig0" style="height: 51%;"><span>4080</span></div>
+                    <div class="bar fig1" style="height: 71%;"><span>5680</span></div>
+                    <div class="bar fig2" style="height: 13%;"><span>1040</span></div>
+                  </div>
+                  <div class="bar-group">
+                    <div class="bar fig0" style="height: 76%;"><span>6080</span></div>
+                    <div class="bar fig1" style="height: 86%;"><span>6880</span></div>
+                    <div class="bar fig2" style="height: 22%;"><span>1760</span></div>
+                  </div>
+                  <div class="bar-group">
+                    <div class="bar fig0" style="height: 78%;"><span>6240</span></div>
+                    <div class="bar fig1" style="height: 72%;"><span>5760</span></div>
+                    <div class="bar fig2" style="height: 36%;"><span>2880</span></div>
+                  </div>
+                  <div class="bar-group">
+                    <div class="bar fig0" style="height: 44%;"><span>3520</span></div>
+                    <div class="bar fig1" style="height: 64%;"><span>5120</span></div>
+                    <div class="bar fig2" style="height: 59%;"><span>4720</span></div>
+                  </div>
+                  <div class="bar-group">
+                    <div class="bar fig0" style="height: 28%;"><span>2240</span></div>
+                    <div class="bar fig1" style="height: 33%;"><span>2640</span></div>
+                    <div class="bar fig2" style="height: 94%;"><span>7520</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+
+  </body>
+
+</html>

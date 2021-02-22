@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Bar Chart</title>
+    <link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="new.css">
+  </head>
+
+  <body>
+
+    <div class='options'>
+      <h1>What's your favorate cat?</h1>
+      <form id="Form">
+
+        <select name="cats" id="cats">
+          <option value="bar0">Select One</option>
+          <option value="bar1">Siamese</option>
+          <option value="bar2">Bengal</option>
+          <option value="bar3">Abyssinian</option>
+          <option value="bar4">Birman</option>
+          <option value="bar5">Domestic short-haired</option>
+          <br>
+          <input type="button" onclick="reselect()" value="Reset">
+      </form>
+      </select>
+    </div>
+
+    <script>
+      $( document ).ready( function () {
+        var myEl = document.querySelector( '#cats' )
+
+      } );
+      var $bar = $( this );
+
+      function resetGraph() {
+
+        $( '.bar' ).animate( {
+          'width': '0px'
+        }, 0 )
+
+        // Restart timer
+        let graphTimer = setTimeout( function () {
+          displayGraph( bar, 0 );
+        }, 200 );
+
+        clearTimeout( graphTimer );
+      }
+
+
+      function reselect() {
+        document.getElementById( 'cats' ).selectedIndex = 0;
+        resetGraph();
+        return false;
+      }
+
+      $( '.toggles' ).mouseenter( function () {
+
+        $( this ).addClass( 'a' );
+      } );
+
+    </script>
+
+
+
+    <div class="wrap">
+      <h1>Top 10 Meanest Cat Breeds on Earths</h1>
+      <div class="toggles">
+        <div class="bar" data-percent="95%"><span class="label">Siamese</span></div>
+        <div class="bar" data-percent="80%"><span class="label second">Bengal</span></div>
+        <div class="bar" data-percent="65%"><span class="label">Abyssinian</span></div>
+        <div class="bar" data-percent="75%"><span class="label second">Birman</span></div>
+        <div class="bar" data-percent="90%"><span class="label">Scottish Fold</span></div>
+        <div class="bar" data-percent="40%"><span class="label second">Egyptian Mau</span></div>
+        <div class="bar" data-percent="45%"><span class="label ">Sphynx</span></div>
+        <div class="bar" data-percent="50%"><span class="label second">Singapura</span></div>
+        <div class="bar" data-percent="95%"><span class="label">Bombay</span></div>
+        <div class="bar" data-percent="70%"><span class="label second">Pixie Bob</span></div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/jq.js"></script>
+    </div>
+  </body>
+
+</html>
